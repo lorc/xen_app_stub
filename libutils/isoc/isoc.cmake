@@ -1,0 +1,21 @@
+add_library(
+    isoc
+    STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/abs.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/memchr.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/memcmp.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/memcpy.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/memmove.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/memset.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/strchr.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/strcmp.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/strlen.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/strncmp.c
+    ${CMAKE_CURRENT_LIST_DIR}/newlib/strnlen.c
+    ${CMAKE_CURRENT_LIST_DIR}/snprintf.c
+    ${CMAKE_CURRENT_LIST_DIR}/strdup.c
+    ${CMAKE_CURRENT_LIST_DIR}/strndup.c
+)
+
+include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/../ext/include)
